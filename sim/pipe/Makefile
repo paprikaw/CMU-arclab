@@ -17,7 +17,7 @@ TKLIBS=-L/usr/lib -ltk -ltcl
 # header files on your system. Comment this out if you don't have
 # Tcl/Tk.
 
-TKINC=-isystem /usr/include/tcl8.5
+TKINC=-isystem /usr/include/tk
 
 # Modify these two lines to choose your compiler and compile time
 # flags.
@@ -34,6 +34,7 @@ HCL2C=$(MISCDIR)/hcl2c
 INC=$(TKINC) -I$(MISCDIR) $(GUIMODE)
 LIBS=$(TKLIBS) -lm
 YAS = ../misc/yas
+VERSION=full
 
 all: psim drivers
 
